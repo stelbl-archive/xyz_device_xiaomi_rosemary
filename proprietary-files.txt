@@ -2542,7 +2542,6 @@ vendor/lib/libladder.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libmfllcore.so
 vendor/lib/libminiui.so
-vendor/lib/libmisound.so
 vendor/lib/libmml.so
 vendor/lib/libmmprofile.so
 vendor/lib/libmnetlink_v104.so
@@ -2823,7 +2822,6 @@ vendor/lib64/libmiStereoFactoryRemapBasicLib.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmipc.so
-vendor/lib64/libmisound.so
 vendor/lib64/libmmagent.so
 vendor/lib64/libmml.so
 vendor/lib64/libmmprofile.so
