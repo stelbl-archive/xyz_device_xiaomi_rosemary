@@ -172,6 +172,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.rosemary
+
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge

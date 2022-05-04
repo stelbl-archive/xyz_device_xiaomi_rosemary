@@ -1608,12 +1608,8 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
 # Lights
-vendor/bin/hw/android.hardware.lights-service.mediatek
-vendor/etc/init/lights-mtk-default.rc
--vendor/etc/vintf/manifest/lights-mtk-default.xml
 vendor/lib/hw/lights.mt6785.so
 vendor/lib64/hw/lights.mt6785.so
-vendor/lib64/android.hardware.light@2.0.so
 
 # Listen
 vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
