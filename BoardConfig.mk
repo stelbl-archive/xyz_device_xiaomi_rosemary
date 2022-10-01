@@ -106,6 +106,7 @@ TARGET_BOARD_PLATFORM := mt6785
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
 # Recovery
