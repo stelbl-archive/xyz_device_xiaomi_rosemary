@@ -465,7 +465,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.adb.nonblocking_ffs=0
+    ro.adb.nonblocking_ffs=0 \
+    persist.adb.nonblocking_ffs=0
 
 # Vibrator
 PRODUCT_PACKAGES += \
