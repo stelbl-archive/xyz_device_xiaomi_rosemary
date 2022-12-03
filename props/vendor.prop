@@ -103,6 +103,7 @@ ro.vendor.mtk_sec_video_path_support=1
 media.c2.dmabuf.padding=3072
 vendor.mtk.vdec.waitkeyframeforplay=9
 ro.vendor.mtk_config_max_dram_size=0x800000000
+media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # Misc
 ro.vendor.mtk_log_hide_gps=0
