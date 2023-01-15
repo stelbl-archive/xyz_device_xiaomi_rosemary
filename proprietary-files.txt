@@ -1662,7 +1662,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/mt6785/libmtk_drvb.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
-vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
