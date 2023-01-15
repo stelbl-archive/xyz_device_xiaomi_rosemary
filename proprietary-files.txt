@@ -1830,7 +1830,6 @@ vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
 
 # Power-Hardware
--vendor/etc/vintf/manifest/power-default.xml
 vendor/lib/hw/power.default.so
 vendor/lib64/hw/power.default.so
 
