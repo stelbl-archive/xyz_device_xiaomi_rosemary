@@ -1297,15 +1297,15 @@ vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/memtrack.default.so
+vendor/lib/hw/gralloc.default.so:vendor/lib/hw/gralloc.mt6785.so
+vendor/lib/hw/memtrack.default.so:vendor/lib/hw/memtrack.mt6785.so
 vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib64/hw/gralloc.default.so
+vendor/lib64/hw/gralloc.default.so:vendor/lib64/hw/gralloc.mt6785.so
 vendor/lib64/hw/hwcomposer.mt6785.so
-vendor/lib64/hw/memtrack.default.so
+vendor/lib64/hw/memtrack.default.so:vendor/lib64/hw/memtrack.mt6785.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
@@ -1830,8 +1830,8 @@ vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
 
 # Power-Hardware
-vendor/lib/hw/power.default.so
-vendor/lib64/hw/power.default.so
+vendor/lib/hw/power.default.so:vendor/lib/hw/power.mt6785.so
+vendor/lib64/hw/power.default.so:vendor/lib64/hw/power.mt6785.so
 
 # Sensors
 vendor/etc/elliptic_sensor.xml
