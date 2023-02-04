@@ -18,7 +18,9 @@ VENDOR_LIB_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so \
 	$(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so \
 	$(TARGET_OUT_VENDOR)/lib/libpq_prot.so \
-	$(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
+	$(TARGET_OUT_VENDOR)/lib64/libpq_prot.so \
+	$(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.5.so \
+	$(TARGET_OUT_VENDOR)/lib64/libneuron_runtime.so
 
 GATEKEEPER_SYMLINKS := \
 	$(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so \
