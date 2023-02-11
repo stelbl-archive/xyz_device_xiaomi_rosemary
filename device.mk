@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# VNDK
+PRODUCT_TARGET_VNDK_VERSION := 31
+PRODUCT_EXTRA_VNDK_VERSIONS := 31
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -100,6 +104,9 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl
 
 # Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail_vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
