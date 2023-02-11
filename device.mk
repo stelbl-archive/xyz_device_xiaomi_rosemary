@@ -125,6 +125,7 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     libdrm.vendor \
+    android.hardware.graphics.composer@2.2-service \
     android.hardware.graphics.composer@2.1.vendor \
     android.hardware.graphics.composer@2.1-resources.vendor \
     android.hardware.memtrack@1.0-service \
@@ -132,7 +133,12 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.4-service.clearkey
+    android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.4.vendor
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -184,6 +190,8 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.0.vendor \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor \
+    libhwc2on1adapter.vendor \
+    libhwc2onfbadapter.vendor \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor
 
