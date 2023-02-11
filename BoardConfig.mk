@@ -61,7 +61,7 @@ TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-PRODUCT_COPY_FILES += $(TARGET_PREBULT_DTB):dtb.img
+PRODUCT_COPY_FILES += $(TARGET_PREBUILT_DTB):dtb.img
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (pagesize)
