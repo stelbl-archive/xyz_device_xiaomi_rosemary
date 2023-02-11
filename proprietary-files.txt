@@ -36,58 +36,14 @@ vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libtinycompress.so
 
 # Audio-Hardware
-vendor/bin/hw/android.hardware.audio.service.mediatek
-vendor/etc/init/android.hardware.audio.service.mediatek.rc
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6785.so
-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6785.so
-vendor/lib/hw/audio.usb.default.so
-vendor/lib/hw/audio_policy.stub.so
-vendor/lib/android.hardware.audio.common-util.so
-vendor/lib/android.hardware.audio.common@5.0.so
-vendor/lib/android.hardware.audio.common@6.0-util.so
-vendor/lib/android.hardware.audio.common@6.0.so
-vendor/lib/android.hardware.audio.common@7.0-enums.so
-vendor/lib/android.hardware.audio.common@7.0-util.so
-vendor/lib/android.hardware.audio.common@7.0.so
-vendor/lib/android.hardware.audio.effect@6.0-util.so
-vendor/lib/android.hardware.audio.effect@6.0.so
-vendor/lib/android.hardware.audio.effect@7.0-util.so
-vendor/lib/android.hardware.audio.effect@7.0.so
-vendor/lib/android.hardware.audio@6.0.so
-vendor/lib/android.hardware.audio@7.0-util.so
-vendor/lib/android.hardware.audio@7.0.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so
-vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
-vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
-vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.primary.mt6785.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
-vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/hw/audio_policy.stub.so
-vendor/lib64/android.hardware.audio.common-util.so
-vendor/lib64/android.hardware.audio.common@5.0.so
-vendor/lib64/android.hardware.audio.common@6.0-util.so
-vendor/lib64/android.hardware.audio.common@6.0.so
-vendor/lib64/android.hardware.audio.common@7.0-enums.so
-vendor/lib64/android.hardware.audio.common@7.0-util.so
-vendor/lib64/android.hardware.audio.common@7.0.so
-vendor/lib64/android.hardware.audio.effect@6.0-util.so
-vendor/lib64/android.hardware.audio.effect@6.0.so
-vendor/lib64/android.hardware.audio.effect@7.0-util.so
-vendor/lib64/android.hardware.audio.effect@7.0.so
-vendor/lib64/android.hardware.audio@6.0.so
-vendor/lib64/android.hardware.audio@7.0-util.so
-vendor/lib64/android.hardware.audio@7.0.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
@@ -210,17 +166,9 @@ vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib/android.hardware.bluetooth.audio@2.0.so
-vendor/lib/android.hardware.bluetooth.audio@2.1.so
-vendor/lib/android.hardware.bluetooth@1.0.so
-vendor/lib/android.hardware.bluetooth@1.1.so
-vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
 vendor/lib/libbluetooth_hw_test.so
 vendor/lib/libbluetooth_mtk.so
@@ -230,17 +178,9 @@ vendor/lib/libbluetoothem_mtk.so
 vendor/lib/libbt-vendor.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
-vendor/lib64/android.hardware.bluetooth.audio@2.0.so
-vendor/lib64/android.hardware.bluetooth.audio@2.1.so
-vendor/lib64/android.hardware.bluetooth@1.0.so
-vendor/lib64/android.hardware.bluetooth@1.1.so
-vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk.so
@@ -758,16 +698,6 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.postproc@1.0-impl.so
-vendor/lib64/android.hardware.camera.common@1.0.so
-vendor/lib64/android.hardware.camera.device@1.0.so
-vendor/lib64/android.hardware.camera.device@3.2.so
-vendor/lib64/android.hardware.camera.device@3.3.so
-vendor/lib64/android.hardware.camera.device@3.4.so
-vendor/lib64/android.hardware.camera.device@3.5.so
-vendor/lib64/android.hardware.camera.device@3.6.so
-vendor/lib64/android.hardware.camera.provider@2.4.so
-vendor/lib64/android.hardware.camera.provider@2.5.so
-vendor/lib64/android.hardware.camera.provider@2.6.so
 vendor/lib64/libCamera_gc02m1bsunnymipimono_Reserved.so
 vendor/lib64/libCamera_gc02m1bsunnymipimono_Scene_Capture.so
 vendor/lib64/libCamera_gc02m1bsunnymipimono_Scene_Preview.so
@@ -1337,22 +1267,9 @@ vendor/lib/liboemcrypto.so
 vendor/lib64/liboemcrypto.so
 
 # DRM-Hardware
-vendor/bin/hw/android.hardware.drm@1.4-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
-vendor/etc/init/android.hardware.drm@1.4-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.clearkey.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
-vendor/lib/android.hardware.drm@1.0.so
-vendor/lib/android.hardware.drm@1.1.so
-vendor/lib/android.hardware.drm@1.2.so
-vendor/lib/android.hardware.drm@1.3.so
-vendor/lib/android.hardware.drm@1.4.so
-vendor/lib64/android.hardware.drm@1.0.so
-vendor/lib64/android.hardware.drm@1.1.so
-vendor/lib64/android.hardware.drm@1.2.so
-vendor/lib64/android.hardware.drm@1.3.so
-vendor/lib64/android.hardware.drm@1.4.so
 
 # DRM-Widevine
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
@@ -1371,44 +1288,24 @@ vendor/etc/dsi_panel_k7_44_0e_0b_fhdp_video_mi.xml
 
 # Display-Hardware
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/android.hardware.graphics.composer@2.2-service
-vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
 vendor/etc/init/android.hardware.graphics.composer@2.2-service.rc
-vendor/etc/init/android.hardware.memtrack@1.0-service.rc
 vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib/libdrm.so
 vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/android.hardware.graphics.composer@2.1-resources.so
-vendor/lib64/android.hardware.graphics.composer@2.1.so
-vendor/lib64/android.hardware.graphics.composer@2.2-resources.so
-vendor/lib64/android.hardware.graphics.composer@2.2.so
-vendor/lib64/libdrm.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-
-# Fido
-vendor/bin/fidoca
-vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
--vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
-vendor/lib/libmfido.so
-vendor/lib/vendor.xiaomi.hardware.mfidoca@1.0.so
-vendor/lib64/libmfido.so
-vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1522,25 +1419,10 @@ vendor/lib/hw/gps.default.so
 vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
-vendor/lib64/android.hardware.gnss.measurement_corrections@1.0.so
-vendor/lib64/android.hardware.gnss.measurement_corrections@1.1.so
-vendor/lib64/android.hardware.gnss.visibility_control@1.0.so
-vendor/lib64/android.hardware.gnss@1.0.so
-vendor/lib64/android.hardware.gnss@1.1.so
-vendor/lib64/android.hardware.gnss@2.0.so
-vendor/lib64/android.hardware.gnss@2.1.so
-
-# GPS-Hardware
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.beanpod.so
-vendor/lib/android.hardware.gatekeeper@1.0.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.beanpod.so
-vendor/lib64/android.hardware.gatekeeper@1.0.so
 
 # Google
 -vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
@@ -1565,19 +1447,6 @@ vendor/lib64/egl/libMEOW_qt.so
 vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/vulkan.mt6785.so
 vendor/lib64/libOpenCL.so
-
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service
-vendor/etc/init/android.hardware.health@2.1-service.rc
--vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so
-vendor/lib/android.hardware.health@1.0.so
-vendor/lib/android.hardware.health@2.0.so
-vendor/lib/android.hardware.health@2.1.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1.so
-vendor/lib64/android.hardware.health@1.0.so
-vendor/lib64/android.hardware.health@2.0.so
-vendor/lib64/android.hardware.health@2.1.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod
@@ -1612,16 +1481,8 @@ vendor/lib/hw/lights.mt6785.so
 vendor/lib64/hw/lights.mt6785.so
 
 # Listen
-vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib/hw/sound_trigger.primary.default.so
-vendor/lib/android.hardware.soundtrigger@2.1.so
-vendor/lib/android.hardware.soundtrigger@2.2.so
-vendor/lib/android.hardware.soundtrigger@2.3.so
-vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib64/hw/sound_trigger.primary.default.so
-vendor/lib64/android.hardware.soundtrigger@2.1.so
-vendor/lib64/android.hardware.soundtrigger@2.2.so
-vendor/lib64/android.hardware.soundtrigger@2.3.so
 
 # Media
 vendor/lib/libstagefright_soft_mpeg2dec.so
@@ -1890,33 +1751,9 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# NFC
-etc/nfcee_access.xml
-vendor/bin/hw/android.hardware.nfc@1.2-service-st
-vendor/bin/nfcstackp-vendor
-vendor/etc/init/hw/init.stnfc.rc
-vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
-vendor/etc/permissions/sku_rosemary/android.hardware.nfc.hce.xml
-vendor/etc/permissions/sku_rosemary/android.hardware.nfc.hcef.xml
-vendor/etc/permissions/sku_rosemary/android.hardware.nfc.uicc.xml
-vendor/etc/permissions/sku_rosemary/android.hardware.nfc.xml
-vendor/etc/permissions/sku_rosemaryp/android.hardware.nfc.hce.xml
-vendor/etc/permissions/sku_rosemaryp/android.hardware.nfc.hcef.xml
-vendor/etc/permissions/sku_rosemaryp/android.hardware.nfc.uicc.xml
-vendor/etc/permissions/sku_rosemaryp/android.hardware.nfc.xml
+# NFC configs
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci.conf
-vendor/etc/st21nfc_conf.txt
-vendor/lib/libnxp_extamp_intf.so
-vendor/lib/nfc_nci.st21nfc.st.so
-vendor/lib64/android.hardware.nfc@1.0.so
-vendor/lib64/android.hardware.nfc@1.1.so
-vendor/lib64/android.hardware.nfc@1.2.so
-vendor/lib64/android.hardware.secure_element@1.0.so
-vendor/lib64/android.hardware.secure_element@1.1.so
-vendor/lib64/android.hardware.secure_element@1.2.so
-vendor/lib64/libnxp_extamp_intf.so
-vendor/lib64/nfc_nci.st21nfc.st.so
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
@@ -1925,10 +1762,6 @@ vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
 vendor/lib/libneuron_graph_delegate.mtk.so
 vendor/lib64/mt6785/libneuron_runtime.5.so
 vendor/lib64/mt6785/libneuron_runtime.so
-vendor/lib64/android.hardware.neuralnetworks@1.0.so
-vendor/lib64/android.hardware.neuralnetworks@1.1.so
-vendor/lib64/android.hardware.neuralnetworks@1.2.so
-vendor/lib64/android.hardware.neuralnetworks@1.3.so
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_graph_delegate.mtk.so
 vendor/lib64/libneuron_platform.so
@@ -1936,42 +1769,14 @@ vendor/lib64/libneuron_platform.so
 # Power-Hardware
 -vendor/etc/vintf/manifest/power-default.xml
 vendor/lib/hw/power.default.so
-vendor/lib/android.hardware.power@1.0.so
-vendor/lib/android.hardware.power@1.1.so
-vendor/lib/android.hardware.power@1.2.so
 vendor/lib64/hw/power.default.so
-vendor/lib64/android.hardware.power@1.0.so
-vendor/lib64/android.hardware.power@1.1.so
-vendor/lib64/android.hardware.power@1.2.so
-
-# Radio
-vendor/lib/android.hardware.radio@1.0.so
-vendor/lib/android.hardware.radio@1.1.so
-vendor/lib64/android.hardware.radio.config@1.0.so
-vendor/lib64/android.hardware.radio.config@1.1.so
-vendor/lib64/android.hardware.radio.config@1.2.so
-vendor/lib64/android.hardware.radio.config@1.3.so
-vendor/lib64/android.hardware.radio@1.0.so
-vendor/lib64/android.hardware.radio@1.1.so
-vendor/lib64/android.hardware.radio@1.2.so
-vendor/lib64/android.hardware.radio@1.3.so
-vendor/lib64/android.hardware.radio@1.4.so
-vendor/lib64/android.hardware.radio@1.5.so
-vendor/lib64/android.hardware.radio@1.6.so
 
 # Sensors
 vendor/etc/elliptic_sensor.xml
-vendor/lib/android.hardware.sensors@1.0.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib64/hw/sensors.elliptic.so
 vendor/lib64/hw/sensors.mt6785.so
-vendor/lib64/android.hardware.sensors@1.0.so
-vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
-vendor/lib64/android.hardware.sensors@2.0.so
-vendor/lib64/android.hardware.sensors@2.1.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensor_custom.so
-vendor/lib64/libsensorndkbridge.so
 
 # Sensor configs
 vendor/etc/sensors/hals.conf
@@ -2000,15 +1805,11 @@ vendor/etc/thermal-phone.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
+vendor/lib/libthermalalgo.so
 vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
-vendor/lib/android.hardware.thermal@1.0.so
-vendor/lib/android.hardware.thermal@2.0.so
-vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
-vendor/lib64/android.hardware.thermal@1.0.so
-vendor/lib64/android.hardware.thermal@2.0.so
 
 # Thermal-Hardware
 vendor/lib/hw/thermal_hal.so
@@ -2370,8 +2171,6 @@ vendor/etc/mdota/MTK_OPOTA_SBPID_7.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_8.mcfopota
 vendor/etc/mdota/MTK_OPOTA_SBPID_9.mcfopota
 vendor/etc/mdota/MTK_OTA.mcfota
-vendor/etc/permissions/sku_rosemary/android.hardware.se.omapi.uicc.xml
-vendor/etc/permissions/sku_rosemaryp/android.hardware.se.omapi.uicc.xml
 vendor/etc/rsc/cn/ro.prop
 vendor/etc/rsc/cn/rw.prop
 vendor/etc/rsc/default/ro.prop
@@ -2619,20 +2418,6 @@ vendor/lib/mt6785/libpq_prot.so
 vendor/lib/soundfx/libhapticgenerator.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
-vendor/lib/android.frameworks.sensorservice@1.0.so
-vendor/lib/android.hardware.boot@1.0.so
-vendor/lib/android.hardware.boot@1.1.so
-vendor/lib/android.hardware.boot@1.2.so
-vendor/lib/android.hardware.cas.native@1.0.so
-vendor/lib/android.hardware.cas@1.0.so
-vendor/lib/android.hardware.cas@1.1.so
-vendor/lib/android.hardware.cas@1.2.so
-vendor/lib/android.hardware.ir@1.0.so
-vendor/lib/android.hardware.media.c2@1.0.so
-vendor/lib/android.hardware.media.c2@1.1.so
-vendor/lib/android.hardware.media.c2@1.2.so
-vendor/lib/android.hidl.allocator@1.0.so
-vendor/lib/android.hidl.memory.block@1.0.so
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/audio_common-aidl-cpp.so
 vendor/lib/audioclient-types-aidl-cpp.so
@@ -2931,25 +2716,6 @@ vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/android.frameworks.sensorservice@1.0.so
-vendor/lib64/android.hardware.boot@1.0.so
-vendor/lib64/android.hardware.boot@1.1.so
-vendor/lib64/android.hardware.boot@1.2.so
-vendor/lib64/android.hardware.ir@1.0.so
-vendor/lib64/android.hardware.media.c2@1.0.so
-vendor/lib64/android.hardware.media.c2@1.1.so
-vendor/lib64/android.hardware.media.c2@1.2.so
-vendor/lib64/android.hardware.tetheroffload.config@1.0.so
-vendor/lib64/android.hardware.tetheroffload.control@1.0.so
-vendor/lib64/android.hardware.tetheroffload.control@1.1.so
-vendor/lib64/android.hardware.usb.gadget@1.0.so
-vendor/lib64/android.hardware.usb.gadget@1.1.so
-vendor/lib64/android.hardware.usb@1.0.so
-vendor/lib64/android.hardware.usb@1.1.so
-vendor/lib64/android.hardware.usb@1.2.so
-vendor/lib64/android.hardware.usb@1.3.so
-vendor/lib64/android.hidl.allocator@1.0.so
-vendor/lib64/android.hidl.memory.block@1.0.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/audio_common-aidl-cpp.so
 vendor/lib64/audioclient-types-aidl-cpp.so
