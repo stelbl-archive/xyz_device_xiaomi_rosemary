@@ -2,10 +2,6 @@
 # vendor.prop for mt6785
 #
 
-# AEE
-ro.vendor.have_aeev_feature=1
-ro.vendor.aee.convert64=0
-
 # APU
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn_quant_preferred=1

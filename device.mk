@@ -413,7 +413,6 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.connectivity.rc \
     init.stnfc.rc \
-    init.aee.rc \
     init.ago.rc \
     init_connectivity.rc \
     init.project.rc \

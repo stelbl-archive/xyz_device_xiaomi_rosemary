@@ -1524,7 +1524,6 @@ vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
@@ -1534,7 +1533,6 @@ vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
@@ -1722,8 +1720,6 @@ vendor/lib64/libmtkspparser.so
 vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
@@ -1856,10 +1852,6 @@ vendor/bin/hw/tetheroffloadservice
 vendor/bin/hw/vtservice_hidl
 vendor/bin/AgentTest
 vendor/bin/STFlashTool
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_dumpstatev
-vendor/bin/aeev
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
@@ -1963,8 +1955,6 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
@@ -2367,8 +2357,6 @@ vendor/etc/MNL_Config.xml
 vendor/etc/NOTICE_GPL.html.gz
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/a2dp_in_audio_policy_configuration.xml
-vendor/etc/aee-commit
-vendor/etc/aee-config
 vendor/etc/armnn_app.config
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
