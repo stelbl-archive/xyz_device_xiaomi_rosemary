@@ -84,6 +84,9 @@ function blob_fixup() {
     vendor/lib64/libmtkcam_featurepolicy.so)
         sed -i "s|\xE8\x87\x40\xB9|\x28\x02\x80\x52|g" "${2}"
         ;;
+   vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
+        "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+        ;;
     esac
 }
 
