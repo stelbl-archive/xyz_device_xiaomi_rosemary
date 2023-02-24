@@ -395,6 +395,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
+    libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl \
     android.hardware.wifi@1.0-service-lazy.rosemary \
     wpa_supplicant \
