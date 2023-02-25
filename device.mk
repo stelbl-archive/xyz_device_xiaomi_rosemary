@@ -183,6 +183,11 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
     android.hardware.ir@1.0-impl
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
