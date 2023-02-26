@@ -114,6 +114,9 @@ BOARD_USES_METADATA_PARTITION := true
 TARGET_BOARD_PLATFORM := mt6785
 BOARD_HAS_MTK_HARDWARE := true
 
+# Power HAL Ext
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-ext.cpp
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/props/system_ext.prop
