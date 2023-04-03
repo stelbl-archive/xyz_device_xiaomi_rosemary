@@ -15,6 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
+    system_ext \
     vendor \
     product \
     boot \
