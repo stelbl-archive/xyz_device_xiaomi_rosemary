@@ -1242,6 +1242,10 @@ on property:sys.boot_completed=1
 on boot
     stop console
 
+# Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 # Offline Charging daemon
 service charger /system/bin/charger
     class charger
