@@ -367,25 +367,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6785 \
     init.cgroup.rc \
-    meta_init.modem.rc \
-    factory_init.connectivity.common.rc \
-    multi_init.rc \
-    factory_init.connectivity.rc \
     init.mt6785.usb.rc \
     init.connectivity.common.rc \
     init.modem.rc \
     init.connectivity.rc \
     init.stnfc.rc \
-    meta_init.project.rc \
-    meta_init.connectivity.common.rc \
-    factory_init.rc \
     init.aee.rc \
     init.ago.rc \
     init_connectivity.rc \
-    factory_init.project.rc \
     init.project.rc \
-    meta_init.connectivity.rc \
-    meta_init.rc \
     init.mt6785.rc \
     init.sensor_1_0.rc
 
