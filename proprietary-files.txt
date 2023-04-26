@@ -2577,7 +2577,6 @@ vendor/lib/libfeatureiodrv_mem.so
 vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
 vendor/lib/libflatbuffers-cpp.so
-vendor/lib/libfmq.so
 vendor/lib/libformatter.so
 vendor/lib/libfvaudio.so
 vendor/lib/libgamehdr.so
@@ -2862,7 +2861,6 @@ vendor/lib64/libfeatureiodrv_mem.so
 vendor/lib64/libfft_vendor.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libflatbuffers-cpp.so
-vendor/lib64/libfmq.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libformatter.so
 vendor/lib64/libfvaudio.so
