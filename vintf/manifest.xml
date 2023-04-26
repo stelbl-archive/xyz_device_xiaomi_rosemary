@@ -332,7 +332,7 @@
         <fqname>@1.0::IDisplayFeature/default</fqname>
     </hal>
     <sepolicy>
-        <version>32.0</version>
+        <version>33.0</version>
     </sepolicy>
     <kernel target-level="5"/>
 </manifest>
