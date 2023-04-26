@@ -458,7 +458,7 @@ PRODUCT_PACKAGES += \
 
 # Tiny compress
 PRODUCT_PACKAGES += \
-    libtinycompress.vendor
+    libtinycompress
 
 # USB
 PRODUCT_PACKAGES += \
