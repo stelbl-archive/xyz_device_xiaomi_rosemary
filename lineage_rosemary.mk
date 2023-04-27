@@ -17,8 +17,8 @@ $(call inherit-product, device/xiaomi/rosemary/device.mk)
 PRODUCT_DEVICE := rosemary
 PRODUCT_NAME := lineage_rosemary
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := rosemary
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_MODEL := Redmi Note 10S
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
