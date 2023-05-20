@@ -26,7 +26,6 @@
         manifest_mmagent.xml
         manifest_dmc.xml
         manifest_apmonitor.xml
-        manifest_nwk_opt.xml
         manifest_composer.xml
         manifest_target_level_r.xml
         manifest.xml
@@ -289,11 +288,6 @@
         <name>vendor.mediatek.hardware.nvram</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::INvram/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.nwk_opt</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::INwkOpt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.pq</name>
