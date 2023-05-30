@@ -191,6 +191,11 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss-V1-ndk.vendor
 
+# GPU
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/egl.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/egl/egl.cfg \
+    $(LOCAL_PATH)/configs/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
