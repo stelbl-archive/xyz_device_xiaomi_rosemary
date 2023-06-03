@@ -85,6 +85,9 @@ ro.lmk.thrashing_limit_decay=2
 ro.lmk.swap_util_max=90
 ro.lmk.kill_timeout_ms=100
 
+# Logd
+ro.logd.kernel=false
+
 # MediaTek
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp-mt6785
 ro.vendor.mediatek.version.release=alps-mp-r0.mp1.tc8sp3-mt6785-V1_lcsh.xm.r0mp1.k85v1.64_P13
