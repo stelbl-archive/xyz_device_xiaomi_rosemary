@@ -263,6 +263,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/com.android.nfc_extras.xml
 
+# Overlay
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayRosemary \
+    FrameworksResOverlayRosemary \
+    SystemUIOverlayRosemary \
+    TelephonyOverlayRosemary \
+    TetheringConfigOverlayRosemary \
+    WifiOverlayRosemary
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
