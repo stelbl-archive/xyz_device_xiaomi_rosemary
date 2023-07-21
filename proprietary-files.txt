@@ -2352,7 +2352,6 @@ vendor/etc/a2dp_in_audio_policy_configuration.xml
 vendor/etc/armnn_app.config
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
-vendor/etc/cgroups.json
 vendor/etc/cit_config.xml
 vendor/etc/default_pd_calibration.bin
 vendor/etc/ecc_list.xml
