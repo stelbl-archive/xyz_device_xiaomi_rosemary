@@ -1279,23 +1279,17 @@ vendor/etc/dsi_panel_k7_44_0e_0b_fhdp_video_mi.xml
 
 # Display-Hardware
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
 -vendor/etc/vintf/manifest/manifest_hwcomposer.xml
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/gralloc.default.so:vendor/lib/hw/gralloc.mt6785.so
 vendor/lib/hw/memtrack.default.so:vendor/lib/hw/memtrack.mt6785.so
-vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/gralloc.default.so:vendor/lib64/hw/gralloc.mt6785.so
 vendor/lib64/hw/hwcomposer.mt6785.so
 vendor/lib64/hw/memtrack.default.so:vendor/lib64/hw/memtrack.mt6785.so
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -2400,7 +2394,6 @@ vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 vendor/etc/wfd_source_capability.csv
-vendor/lib/hw/displayfeature.default.so
 vendor/lib/hw/kmsetkey.beanpod.so
 vendor/lib/hw/libSoftGatekeeper.so
 vendor/lib/mt6785/libdpframework.so
@@ -2654,7 +2647,6 @@ vendor/lib/ov64b40semco_mipi_raw_india_IdxMgr.so
 vendor/lib/ov64b40semco_mipi_raw_india_tuning.so
 vendor/lib/ov64b40semco_mipi_raw_tuning.so
 vendor/lib/shared-file-region-aidl-cpp.so
-vendor/lib64/hw/displayfeature.default.so
 vendor/lib64/hw/kmsetkey.beanpod.so
 vendor/lib64/hw/libSoftGatekeeper.so
 vendor/lib64/mt6785/libdpframework.so
