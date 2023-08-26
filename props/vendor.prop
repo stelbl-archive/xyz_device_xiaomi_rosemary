@@ -9,6 +9,10 @@ ro.vendor.mtk_nn_support=1
 ro.vendor.mtk_nn.option=D,E,F,Z
 ro.vendor.mtk_nn_baseline_support=1
 
+# ART 
+dalvik.vm.dex2oat-minidebuginfo=false
+dalvik.vm.minidebuginfo=false
+
 # Audio
 aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
