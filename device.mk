@@ -500,6 +500,13 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.nonblocking_ffs=0 \
     persist.adb.nonblocking_ffs=0
 
+ifeq ($(TARGET_ENABLE_DEBUGGING),true)
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
+    ro.debuggable=1 \
+    persist.sys.usb.config=adb
+endif
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.rosemary
