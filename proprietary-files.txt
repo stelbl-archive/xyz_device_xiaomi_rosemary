@@ -2385,7 +2385,6 @@ vendor/etc/screen_light.xml
 vendor/etc/slp_conf
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
-vendor/etc/task_profiles.json
 vendor/etc/throttle.sh
 vendor/etc/ueventd.rc
 vendor/etc/ultrasound.wav
