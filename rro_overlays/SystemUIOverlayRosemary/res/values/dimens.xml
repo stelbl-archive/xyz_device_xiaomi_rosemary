@@ -16,10 +16,6 @@
 */
 -->
 <resources>
-    <dimen name="config_rounded_mask_size">156px</dimen>
-    <dimen name="config_rounded_mask_size_top">@dimen/config_rounded_mask_size</dimen>
-    <dimen name="config_rounded_mask_size_bottom">@dimen/config_rounded_mask_size</dimen>
-
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">1025px</dimen>
 
@@ -33,27 +29,20 @@
     <dimen name="physical_volume_down_button_center_screen_location_y">1150px</dimen>
     <dimen name="physical_volume_up_button_center_screen_location_y">950px</dimen>
 
-    <!-- The padding on the side of the navigation bar. Must be greater than or equal to
-         navigation_extra_key_width -->
-    <dimen name="navigation_side_padding">85.0dip</dimen>
-
     <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">1.5dp</dimen>
+    <dimen name="status_bar_padding_top">10.0px</dimen>
 
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">10dp</dimen>
- 
+    <dimen name="status_bar_padding_start">23.0px</dimen>
+
     <!-- the padding on the end of the statusbar -->
-    <dimen name="status_bar_padding_end">10dp</dimen>
-
-    <!-- gap on either side of status bar notification icons -->
-    <dimen name="status_bar_icon_padding">-1dp</dimen>
-
-    <!-- Height of the status bar header bar when on Keyguard (match status_bar_height) -->
-    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
+    <dimen name="status_bar_padding_end">0dp</dimen>
 
     <!-- Margin on the right side of the system icon group on Keyguard. -->
-    <dimen name="system_icons_keyguard_padding_end">7.5dp</dimen>
+    <dimen name="system_icons_keyguard_padding_end">0dp</dimen>
+
+    <!-- Starting padding for a left-aligned status bar clock -->
+    <dimen name="status_bar_left_clock_starting_padding">0.0px</dimen>
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">20dp</dimen>
