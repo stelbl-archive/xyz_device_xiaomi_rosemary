@@ -29,6 +29,11 @@ on early-init
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu6/cpufreq/schedutil/down_rate_limit_us 20000
 
+on property:sys.boot_completed=1
+    write /sys/block/mmcblk0/queue/iostats 0
+    write /sys/block/mmcblk0/queue/read_ahead_kb 512
+    write /sys/block/mmcblk0/queue/nr_requests 128
+
 on init
     write /proc/bootprof "INIT:init"
 
@@ -1252,13 +1257,23 @@ on property:sys.boot_completed=1
     write /sys/kernel/mm/swap/vma_ra_enabled false
     swapon_all /vendor/etc/fstab.mt6785
 
-# Stop Serial Console
-on boot
-    stop console
-
 # Report max frequency to unity and miHoYo (HoYoverse) games tasks
     write /proc/sys/kernel/sched_lib_name "com.miHoYo.,com.HoYoverse.,UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
+
+# bring back all cores
+    write /sys/devices/system/cpu/cpu0/online 1
+    write /sys/devices/system/cpu/cpu1/online 1
+    write /sys/devices/system/cpu/cpu2/online 1
+    write /sys/devices/system/cpu/cpu3/online 1
+    write /sys/devices/system/cpu/cpu4/online 1
+    write /sys/devices/system/cpu/cpu5/online 1
+    write /sys/devices/system/cpu/cpu6/online 1
+    write /sys/devices/system/cpu/cpu7/online 1
+
+# Stop Serial Console
+on boot
+    stop console
 
 # Offline Charging daemon
 service charger /system/bin/charger
