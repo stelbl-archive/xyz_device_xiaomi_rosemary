@@ -2673,7 +2673,7 @@ vendor/lib64/libudf.so
 
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
-vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc|2710687c1cb9695ed3c5ea21d5c034934036f623
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # WiFi
