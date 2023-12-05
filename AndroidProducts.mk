@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_rosemary.mk
+    $(LOCAL_DIR)/halcyon_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_rosemary-user \
-    voltage_rosemary-userdebug \
-    voltage_rosemary-eng
+    halcyon_rosemary-user \
+    halcyon_rosemary-userdebug \
+    halcyon_rosemary-eng
