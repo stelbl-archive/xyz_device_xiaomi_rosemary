@@ -1465,8 +1465,8 @@ system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:lib/vendor.mediate
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Patched IMSService APK, from rosemary-user 12 SP1A.210812.016 V13.0.5.0.SFFTWXM release-keys
-# https://github.com/xyzuniverse/ImsService
--system/priv-app/ImsService/ImsService.apk|0b81fb0688f6db3b21186cb9bbbea07f36c10851
+# https://github.com/ChuckProjekt/ImsService
+-system/priv-app/ImsService/ImsService.apk|dcf13f77418d87872539f9a7b02862d930c665d7
 
 # Kernel modules
 vendor/lib/modules/bt_drv_connac1x.ko
