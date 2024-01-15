@@ -251,6 +251,7 @@ debug.sf.enable_gl_backpressure=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_egl_image_tracker=1
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
+ro.sf.blurs_are_expensive=1
 
 # TEE
 ro.hardware.kmsetkey=beanpod
