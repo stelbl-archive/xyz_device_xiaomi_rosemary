@@ -2,6 +2,7 @@
 
 # Colors
 GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
@@ -10,38 +11,61 @@ success() {
     echo -e "${GREEN}$1${NC}"
 }
 
+# Function to display warning message
+warning() {
+    echo -e "${YELLOW}$1${NC}"
+}
+
 # Function to display error message
 error() {
     echo -e "${RED}$1${NC}"
 }
 
 # Cleanup
-echo -e "\n${GREEN}Cleaning up.${NC}"
 rm -rf device/mediatek/sepolicy_vndr
 
-# Clone required repositories
-echo -e "\n${GREEN}Cloning required repositories.${NC}"
-git clone https://github.com/lineageos/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
-git clone https://github.com/xiaomi-mt6781-devs/android_hardware_mediatek hardware/mediatek
-git clone https://github.com/cly-build/vendor-xiaomi-rosemary vendor/xiaomi/rosemary
-git clone -b lineage-21 https://github.com/hannahmontanadeving/android_kernel_xiaomi_mt6785 --depth=1 --single-branch
-git clone https://gitlab.com/xyzuniverse/android_vendor_xiaomi_rosemary-firmware vendor/xiaomi/rosemary-firmware
+# Repositories to clone with target directories
+repos=(
+    "https://github.com/lineageos/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr"
+    "https://github.com/xiaomi-mt6781-devs/android_hardware_mediatek hardware/mediatek"
+    "https://github.com/cly-build/vendor-xiaomi-rosemary vendor/xiaomi/rosemary"
+    "https://github.com/hannahmontanadeving/android_kernel_xiaomi_mt6785 kernel/xiaomi/rosemary --depth=1 --single-branch -b lineage-21"
+    "https://gitlab.com/xyzuniverse/android_vendor_xiaomi_rosemary-firmware vendor/xiaomi/rosemary-firmware"
+    "https://bitbucket.org/saikrishna1504/vendor_miuicameraleica vendor/MiuiCameraLeica"
+)
+
+# Clone repositories
+for repo in "${repos[@]}"; do
+    target_dir=$(echo "$repo" | awk '{print $NF}')
+    
+    if [ -d "$target_dir" ]; then
+        warning "Directory $target_dir already exists. Skipping clone."
+    else
+        echo -e "\n${GREEN}Cloning: $repo${NC}"
+        git clone "$repo"
+    fi
+done
+
+# Check if packages/apps/Aperture directory exists
+if [ -d "packages/apps/Aperture" ]; then
+    echo -e "Aperture detected! Removing..."
+    rm -rf packages/apps/Aperture
+else
+    warning "Aperture not detected. Check if the package name is different or has changed."
+fi
 
 # Remove charger images on vendor
-echo -e "\n${GREEN}Removing charger images on vendor.${NC}"
 rm -rf vendor/*/charger
 
 # Remove gnss on hardware/mediatek
-echo -e "\n${GREEN}Removing gnss on hardware/mediatek.${NC}"
-cd hardware/mediatek
+cd hardware/mediatek || exit
 rm -rf gnss*
 rm -rf */gnss*
 cd -
 
 # Set up builder username and hostname
-echo -e "\n${GREEN}Setting up builder username and hostname.${NC}"
 export BUILD_USERNAME=rad
 export BUILD_HOSTNAME=$(hostname)
 
 # Display success message
-success "Rosemary configuration setup, executed.!"
+success "Script execution completed successfully."
