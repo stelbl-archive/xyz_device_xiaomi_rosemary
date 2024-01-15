@@ -14,6 +14,17 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from rosemary device
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
+# Misc Device Configuration
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 PRODUCT_DEVICE := rosemary
 PRODUCT_NAME := aosp_rosemary
 PRODUCT_BRAND := Redmi
