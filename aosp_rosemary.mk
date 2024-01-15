@@ -14,6 +14,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from rosemary device
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
 
+# Inherit MiCamera Prebuilt
+$(call inherit-product, vendor/MiuiCameraLeica/config.mk)
+
 # Misc Device Configuration
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ARCORE := true
