@@ -42,7 +42,7 @@ for repo in "${repos[@]}"; do
         warning "Directory $target_dir already exists. Skipping clone."
     else
         echo -e "\n${GREEN}Cloning: $repo${NC}"
-        git clone "$repo"
+        git clone "$repo" || { error "Failed to clone $repo"; }
     fi
 done
 
@@ -58,7 +58,7 @@ fi
 rm -rf vendor/*/charger
 
 # Remove gnss on hardware/mediatek
-cd hardware/mediatek || exit
+cd hardware/mediatek || { error "Failed to enter hardware/mediatek directory"; }
 rm -rf gnss*
 rm -rf */gnss*
 cd -
