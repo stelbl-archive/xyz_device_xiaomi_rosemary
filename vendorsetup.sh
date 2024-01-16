@@ -24,27 +24,35 @@ error() {
 # Cleanup
 rm -rf device/mediatek/sepolicy_vndr
 
-# Repositories to clone with target directories
-repos=(
-    "https://github.com/lineageos/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr"
-    "https://github.com/xiaomi-mt6781-devs/android_hardware_mediatek hardware/mediatek"
-    "https://github.com/cly-build/vendor-xiaomi-rosemary vendor/xiaomi/rosemary"
-    "https://github.com/hannahmontanadeving/android_kernel_xiaomi_mt6785 kernel/xiaomi/rosemary --depth=1 --single-branch -b lineage-21"
-    "https://gitlab.com/xyzuniverse/android_vendor_xiaomi_rosemary-firmware vendor/xiaomi/rosemary-firmware"
-    "https://bitbucket.org/saikrishna1504/vendor_miuicameraleica vendor/MiuiCameraLeica"
-)
+# Clone repository function
+clone_repository() {
+    repo_url="$1"
+    target_dir="$2"
+    args="${@:3}"  # Capture additional arguments
 
-# Clone repositories
-for repo in "${repos[@]}"; do
-    target_dir=$(echo "$repo" | awk '{print $NF}')
-    
     if [ -d "$target_dir" ]; then
         warning "Directory $target_dir already exists. Skipping clone."
     else
-        echo -e "\n${GREEN}Cloning: $repo${NC}"
-        git clone "$repo" || { error "Failed to clone $repo"; }
+        echo -e "\n${GREEN}Cloning: $repo_url${NC}"
+        git clone $args "$repo_url" "$target_dir" || { error "Failed to clone $repo_url"; }
+        
+        # After cloning, set branch if applicable
+        if [[ "$args" == *"-b "* ]]; then
+            branch=$(echo "$args" | grep -oP -- "-b \K[^ ]*")
+            cd "$target_dir" || return
+            git checkout "$branch"
+            cd - || return
+        fi
     fi
-done
+}
+
+# Clone repositories one by one
+clone_repository "https://github.com/lineageos/android_device_mediatek_sepolicy_vndr" "device/mediatek/sepolicy_vndr"
+clone_repository "https://github.com/xiaomi-mt6781-devs/android_hardware_mediatek" "hardware/mediatek"
+clone_repository "https://github.com/cly-build/vendor-xiaomi-rosemary" "vendor/xiaomi/rosemary"
+clone_repository "https://github.com/hannahmontanadeving/android_kernel_xiaomi_mt6785" "kernel/xiaomi/rosemary" "--depth=1 --single-branch -b lineage-21"
+clone_repository "https://gitlab.com/xyzuniverse/android_vendor_xiaomi_rosemary-firmware" "vendor/xiaomi/rosemary-firmware"
+clone_repository "https://bitbucket.org/saikrishna1504/vendor_miuicameraleica" "vendor/MiuiCameraLeica"
 
 # Check if packages/apps/Aperture directory exists
 if [ -d "packages/apps/Aperture" ]; then
