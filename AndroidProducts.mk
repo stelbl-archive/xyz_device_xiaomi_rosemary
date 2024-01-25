@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_rosemary.mk
+    $(LOCAL_DIR)/rad_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_rosemary-user \
-    aosp_rosemary-userdebug \
-    aosp_rosemary-eng
+    rad_rosemary-user \
+    rad_rosemary-userdebug \
+    rad_rosemary-eng
