@@ -49,7 +49,7 @@ clone_repository() {
 # Clone repositories one by one
 clone_repository "https://github.com/lineageos/android_device_mediatek_sepolicy_vndr" "device/mediatek/sepolicy_vndr"
 clone_repository "https://github.com/xiaomi-mt6781-devs/android_hardware_mediatek" "hardware/mediatek"
-clone_repository "https://github.com/cly-build/vendor-xiaomi-rosemary" "vendor/xiaomi/rosemary"
+clone_repository "https://github.com/Sicantik-Hanya-Gabut/vt" "vendor/xiaomi/rosemary"
 clone_repository "https://github.com/hannahmontanadeving/android_kernel_xiaomi_mt6785" "kernel/xiaomi/rosemary" "--depth=1 --single-branch -b lineage-21"
 clone_repository "https://gitlab.com/xyzuniverse/android_vendor_xiaomi_rosemary-firmware" "vendor/xiaomi/rosemary-firmware"
 clone_repository "https://bitbucket.org/saikrishna1504/vendor_miuicameraleica" "vendor/MiuiCameraLeica"
