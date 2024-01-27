@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from rosemary device
 $(call inherit-product, device/xiaomi/rosemary/device.mk)
@@ -29,7 +29,7 @@ TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_DEVICE := rosemary
-PRODUCT_NAME := xiaomi_rosemary
+PRODUCT_NAME := lineage_rosemary
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := M2101K7BNY
 PRODUCT_MANUFACTURER := xiaomi
