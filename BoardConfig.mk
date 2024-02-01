@@ -52,13 +52,16 @@ TARGET_RECOVERY_DEVICE_MODULES := init_rosemary
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+# Kernel Page size and offside
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x07c08000
 BOARD_KERNEL_TAGS_OFFSET := 0x0bc08000
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+
+# Kernel Source Configs
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_CONFIG := rosemary_defconfig
@@ -82,7 +85,10 @@ BOARD_MAIN_PARTITION_LIST := \
     product \
     vendor
 
-# Reserve space for gapps install
+# Permisive selinux
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
+# Partitions For Gapps Build
 ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 614400000
@@ -172,5 +178,5 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 ## Copy wpa_supplicant init rc from external/wpa_supplicant
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
-# Firmware
+# Firmware ships
 include vendor/xiaomi/rosemary-firmware/config.mk
