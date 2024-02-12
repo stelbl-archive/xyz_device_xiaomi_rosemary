@@ -27,7 +27,6 @@ r_dir_file(mi_thermald, sysfs_power_supply)
 
 # Allow mi_thermald to read and write to sysfs_*
 allow mi_thermald {
-  sysfs
   sysfs_leds
   sysfs_therm
   sysfs_thermal
