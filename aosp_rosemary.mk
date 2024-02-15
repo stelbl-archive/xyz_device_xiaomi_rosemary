@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/rosemary/device.mk)
 # Inherit some common Aosp stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit Lmc Camera for Aosp if needed
+$(call inherit-product-if-exists, vendor/gcgop/config.mk)
+
 PRODUCT_NAME := aosp_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
