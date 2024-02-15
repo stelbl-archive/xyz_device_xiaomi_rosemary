@@ -52,7 +52,7 @@ clone_repository "https://github.com/xiaomi-mediatek-devs/android_hardware_media
 clone_repository "https://github.com/xiaomi-mediatek-devs/android_hardware_xiaomi" hardware/xiaomi
 clone_repository "https://github.com/AndroDesk/proprietary_vendor_xiaomi_rosemary" "vendor/xiaomi/rosemary"
 clone_repository "https://github.com/Sicantik-Hanya-Gabut/krnl" "kernel/xiaomi/rosemary" "--depth=1 --single-branch -b lineage-21"
-clone_repository "https://gitlab.com/xyzuniverse/android_vendor_xiaomi_rosemary-firmware" "vendor/xiaomi/rosemary-firmware"
+clone_repository "https://codeberg.org/heyradrepo/vendor_rosemary-firmware" "vendor/xiaomi/rosemary-firmware"
 clone_repository "https://codeberg.org/heyradrepo/vendor_gcgop" "vendor/gcgop"
 
 # Check if packages/apps/Aperture directory exists
