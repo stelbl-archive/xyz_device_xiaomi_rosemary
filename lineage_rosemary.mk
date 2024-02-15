@@ -14,6 +14,21 @@ $(call inherit-product, device/xiaomi/rosemary/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Matrixx 
+MATRIXX_MAINTAINER := Troublescope
+MATRIXX_CHIPSET := MT6785V/CD
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 1080X2400
+
+# Gapps
+# WITH_GMS := true
+
+# AOSP Recovery
+TARGET_USES_AOSP_RECOVERY := true
+
+#Blur effect
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_NAME := lineage_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
