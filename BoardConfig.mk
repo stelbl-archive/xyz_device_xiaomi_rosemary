@@ -69,7 +69,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # permissive selinux
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
@@ -91,7 +91,7 @@ TARGET_RECOVERY_DEVICE_MODULES := init_rosemary
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6785
+TARGET_KERNEL_SOURCE := kernel/xiaomi/rosemary
 TARGET_KERNEL_CONFIG := rosemary_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_CUSTOM_DTBOIMG_MK := $(DEVICE_PATH)/dtbo/dtbo.mk
